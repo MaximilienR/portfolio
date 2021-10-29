@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ANAF</title>
+
+
+
+  <!-- CSS Files -->
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+
+
+  <!-- Template Main CSS File -->
+  <link href="public/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top justify-content-between">
+    <a class="navbar-brand pr-1 " href="#"><img src="public/assets/img/Capture.logo.JPG" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse  flex-grow-0 pr-3" id="navbarSupportedContent">
+      <ul class="navbar-nav text-left ">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="vue/Qui-sommes-nous.html">À propos</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="vue/eligibilite-aptic.html">#Aptic</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="vue/pro.html">Professionnel vos besoins</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="vue/nos_formations.html">Formations</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="vue/resultats.html">Offres d'emploi</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="vue/resultats.html">Résultats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Insertion</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="vue/news.html">News</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="vue/contact.html">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link d-none d-md-block .d-xl-none" href="#">|</a>
+        </li>
+        <li class="nav-item active">
+          <!-- Button HTML (to Trigger Modal) -->
+          <a href="#myModal" class="nav-link" data-toggle="modal"><i class="far fa-user"></i> S'identifier
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- fin navbar -->
+
+  <!-- Modal HTML -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-login mb-5">
+      <div class="modal-content">
+        <form action="/examples/actions/confirmation.php" method="post">
+          <div class="modal-header">
+            <h4 class="modal-title">Connectez-vous</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Nom d'utilisateur</label>
+              <input type="text" class="form-control" required="required">
+            </div>
+            <div class="form-group">
+              <div class="clearfix">
+                <label>Mot de passe</label>
+                <a href="#" class="float-right text-muted"><small>Mot de passe oublié?</small></a>
+              </div>
+
+              <input type="password" class="form-control" required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="clearfix">
+              <p class="text-center"><i>Vous avez votre mot de passe provisoir, veuillez</i><a href="vue/register.html"
+                  class="px-2">créer votre compte</a></p>
+
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+
+            <input type="submit" class="btn btn-primary " value="Connexion">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--end-login-->
+
+  <!--section-header-->
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fullscreen" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('public/assets/img/societe.jpg')">
+          <div class="carousel-caption d-none d-md-block lg-black">
+            <h2 class="display-4 ">Trouvez la formation qui vous convient.</h2>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('public/assets/img/societe2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Des offres d'emplois qui vous correspond.</h2>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('public/assets/img/image4.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Nous sommes à votre écoute pour vos projets.</h2>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ======= About Section ======= -->
+  <div class="containerfluid mt-5">
+    <div class="row-about">
+      <section id="about" class="about">
+        <div class="container">
+
+          <div class="row content">
+            <div class="col-lg-7">
+              <h2 class="citation">Citation de la semaine</h2>
+              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen
+                jonee
+                trave
+              </h3>
+            </div>
+            <div class="col-lg-5 mt-1 ">
+              <h2>
+                Nos valeurs :
+              </h2>
+              <ul>
+                <li><i class="fas fa-check-double"></i> Notre objectif principal au quotidien est la
+                  satisfaction
+                  des entreprises partenaires et des apprenants.
+                </li>
+                <li><i class="fas fa-check-double"></i> Nos différents intervenants et formateurs
+                  sont tous
+                  issus du secteur professionnel qu’il dispense.
+                </li>
+                <li><i class="fas fa-check-double"></i> Notre priorité, votre réussite !</li>
+              </ul>
+              <p class="font-italic">
+                ANAF , plus de 20 ans d’expérience au service des professionnels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- End About Section -->
+
+  <!-- ======= About Section2 ======= -->
+  <section class="paral">
+    <div class="container-fluid">
+      <h2 class="pres text-center mb-4">MOT DU PRÉSIDENT</h2>
+      <div class="para text-justify">
+        <div class=" para text-justify mt-5"><i class="fas fa-quote-left"></i> Depuis Juillet une nouvelle
+          équipe
+          dirigeante est arrivée à
+          <strong>l'ANAF</strong>,
+          cette
+          équipe à pour
+          conviction que la force d'une
+          association et de son équipe sont <strong>valeurs et le sens qu'elle donne à ses
+            actions</strong>.<br>
+          Notre engagement sera :<br>
+          L'accueil et l'écoute des personnes qui viennent vers nous pour
+          acquérir
+          de nouvelles compétences, certes
+          mais aussi
+          trouver un accompagnement pour développer leur autonomie, créer des liens, s'ouvrir
+          aux autres.
+          La prise en compte des besoins des "apprenants", leur expression et
+          prise
+          de parole, l'implication et la prise
+          d'initiative dans les projets font partie de nos processus et objectifs
+          pédagogiques.
+          Nos projets s'appuieront également sur <strong>l'implication de tous</strong> :
+          Que ce soient les personnes accueillies que nous associons le plus
+          possible dans les activités
+          (Cours, sorties, méthodes etc...)
+        </div><br>
+
+        <div class="img1 mt-5"></div>
+
+        <p class="para text-justify mt-5">L'équipe de salariés, investis et mobilisés de façon
+          <strong>étente et
+            exemplaire</strong>
+          dans les missions confiées.<br>Les partenaires qui nous font confiance quant à leur évolution.
+          Les entreprises qui nous ont choisies dans leurs programmes de développement des
+          <strong>compétences</strong>.
+          L'ensemble des membres du Conseil d'Administration, vigilant au cadre proposé et <strong>respect
+            de ses
+            principes.</strong><BR>
+          Le contexte politique institutionnel, lié à l'insertion des publics en difficulté et la
+          formation, est
+          en
+          évolution
+          constante et exige d'une association comme la nôtre des adaptations fréquentes.
+          Cette année, je vais vivre ma première expérience à la tête de cette merveilleuse <strong>Nord
+            Artois
+            Formation.</strong>
+
+          La confiance qui m'a été faite me touche beaucoup.
+          La situation exceptionnelle que nous vivons sur cette année 2020, le partage et l'implication
+          de tous ceux que j'ai eu la joie de rencontrer et avec qui j'ai eu la chance d'avoir de
+          merveilleux
+          échanges
+          renforcent
+          ma conviction qu'un groupe de personnes réunies autour de valeurs et d'objectifs communs peuvent
+          <strong>réaliser
+            de
+            grandes
+            choses.</strong>
+        </p>
+        <div class="img2 mt-5"></div>
+        <p class="para text-justify mt-5">Quel que soit votre projet, vos objectifs, que vous soyez une
+          entreprise,
+          un employeur, un salarié, un demandeur
+          d'emploi ou un créateur d'entreprise l'équipe ANAF les partagera et vous accompagnera en toute
+          sérénité
+          sur le chemin du
+          succès. Ce n'est pas parce que c'est difficile que nous n'osons pas, c'est parce que nous
+          n'osons que
+          c'est difficile.<br>
+          Dans l'attente de rapidement partager avec vous de merveilleux parcours. <i
+            class="fas fa-pen-fancy fa-1x"></i>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Clients Section ======= -->
+  <section id="clients" class="clients section-bg mt-5">
+    <div class="container">
+      <h4>Nos partenaires</h4>
+      <hr>
+      <div class="row col-sm-2 col-md-12">
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="public/assets/img/Capture7.JPG" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="public/assets/img/Capture8.JPG" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="public/assets/img/defi.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="public/assets/img/loos.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="public/assets/img/defi.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="public/assets/img/passed.png" class="img-fluid" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Clients Section -->
+
+  <!-- ======= Footer ======= -->
+  <!--footer starts from here-->
+  <footer class="footer">
+    <div class="container bottom_border">
+      <div class="row">
+        <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Trouvez nous</h5>
+          <!--headin5_amrc-->
+          <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum
+            has
+            been
+            the industry's standard dummy text ever since the 1500s</p>
+          <p><i class="fa fa-location-arrow"></i> 16 rue du gard 62 300 lens </p>
+          <p><i class="fa fa-phone"></i> 03 21 75 27 98 </p>
+          <p><i class="fa fa fa-envelope"></i> jeanmichelguilleman@anaf-didactif.fr </p>
+        </div>
+        <div class=" col-sm-4 col-md  col-6 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Liens rapides</h5>
+          <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="vue/eligibilite-aptic.html">Éligible à l'Aptic</a></li>
+            <li><a href="vue/offre-d-emploi.html">Offres d'emploi</a></li>
+            <li><a href="vue/nos_formations.html">Formations</a></li>
+            <li><a href="vue/pro.html">Professionnel vos besoins</a></li>
+          </ul>
+          <!--footer_ul_amrc ends here-->
+        </div>
+        <div class=" col-sm-4 col-md  col-6 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Liens rapides</h5>
+          <!--headin5_amrc-->
+          <ul class="footer_ul_amrc">
+            <li><a href="vue/foire-aux-questions.html">Foire aux questions</a></li>
+            <li><a href="vue/register.html">S'enregistrer</a></li>
+            <li><a href="#">Mon compte</a></li>
+          </ul>
+          <!--footer_ul_amrc ends here-->
+        </div>
+        <div class=" col-sm-4 col-md  col-12 col">
+          <h5 class="headin5_amrc col_white_amrc pt2">Suivez-nous</h5>
+          <!--headin5_amrc ends here-->
+          <ul class="footer_ul2_amrc">
+            <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+              <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
+              </p>
+            </li>
+            <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+              <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
+              </p>
+            </li>
+            <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+              <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
+              </p>
+            </li>
+          </ul>
+          <div class="newsletter-subscribe">
+            <div class="container">
+              <div class="row">
+                <div class="col-ms-6">
+                  <div class="intro">
+                    <h6 class=" text-white mt-2">Souscrire à la newsletter</h6>
+                  </div>
+                  <form class="form-inline" method="post">
+                    <div class="form-group"><input class="form-control" type="email" name="email"
+                        placeholder="Your Email">
+                      <div class="form-group"><button class="btn btn-primary" type="submit">Souscrire
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          </ul>
+          <!--footer_ul2_amrc ends here-->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="foote_bottom_ul_amrc">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="vue/qui-sommes-nous.html">À propos</a></li>
+        <li><a href="vue/resultats.html">Résultats</a></li>
+        <li><a href="vue/contact.html">Contact</a></li>
+      </ul>
+      <!--foote_bottom_ul_amrc ends here-->
+      <p class="text-center">Copyright @2021 | Designed With by <a href="#">Anaf Dadactif</a></p>
+
+      <ul class="social_footer_ul">
+        <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      <!--social_footer_ul ends here-->
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="public/assets/js/bootstrap.min.js"></script>
+  <script src="public/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

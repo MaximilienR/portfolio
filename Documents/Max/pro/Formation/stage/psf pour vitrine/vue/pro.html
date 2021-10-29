@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>professionnels-vos-besoins</title>
+
+
+
+    <!-- CSS Files -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+
+    <!-- Template Main CSS File -->
+    <link href="../public/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top justify-content-between">
+        <a class="navbar-brand px-2 " href="#"><img src="../public/assets/img/Capture.logo.JPG" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse  flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav text-left ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Accueil</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Qui-sommes-nous.html">À propos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="eligibilite-aptic.html">#Aptic</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="pro.html">Professionnel vos besoins</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="offre-d-emploi.html">Offre d'emploi</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="nos_formations.html">Formations</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="resultats.html">Résultats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Insertion</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link d-none d-md-block .d-xl-none" href="#">|</a>
+                </li>
+                <li class="nav-item active">
+                    <!-- Button HTML (to Trigger Modal) -->
+                    <a href="#myModal" class="nav-link" data-toggle="modal"><i class="far fa-user"></i> Se
+                        connecter</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-login mb-5">
+            <div class="modal-content">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Connectez-vous</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Nom d'utilisateur</label>
+                            <input type="text" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <div class="clearfix">
+                                <label>Mot de passe</label>
+                                <a href="#" class="float-right text-muted"><small>Mot de passe oublié?</small></a>
+                            </div>
+
+                            <input type="password" class="form-control" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="clearfix">
+                            <p class="text-center"><i>Vous avez votre mot de passe provisoir, veuillez</i><a
+                                    href="register.html" class="px-2">créer votre compte</a></p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+
+                        <input type="submit" class="btn btn-primary " value="Connexion">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--end-login-->
+    <div class="container-fluid">
+
+        <div class="row bg-dark p-1">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mx-auto p-1">
+                <div class="hover-box">
+                    <img src="../public/assets/img/ph1.jpg " alt="bureau">
+                    <div class="hover-box-content">
+                        <div class="hover-box-title">
+                            Lorem Ipsum
+                        </div>
+                        <div class="hover-box-desc">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mx-auto p-1">
+                <div class="hover-box">
+                    <img src="../public/assets/img/ph2.jpg" alt="batiment">
+                    <div class="hover-box-content">
+                        <div class="hover-box-title">
+                            Lorem Ipsum
+                        </div>
+                        <div class="hover-box-desc">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mx-auto p-1">
+                <div class="hover-box">
+                    <img src="../public/assets/img/ph6.jpg" alt="reunion">
+                    <div class="hover-box-content">
+                        <div class="hover-box-title">
+                            Lorem Ipsum
+                        </div>
+                        <div class="hover-box-desc">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mx-auto p-1">
+                <div class="hover-box">
+                    <img src="../public/assets/img/ph4.jpg" alt="bureau">
+                    <div class="hover-box-content">
+                        <div class="hover-box-title">
+                            Lorem Ipsum
+                        </div>
+                        <div class="hover-box-desc">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row info mt-3">
+            <div class="col-12 text-center mx-auto p-5 ">
+                <div class="demo-title">
+                    Professionnel vos besoins
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--form-professionnels-->
+
+    <div class="container mt-5">
+        <div class="contact__wrapper shadow-lg mt-n9">
+            <div class="row no-gutters">
+                <div class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
+                    <div class="mb-5 justify-content-center text-dark">
+                        <h3 class="color--black mb-5 ">Professionnel info</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusamus error numquam impedit ab aut! Hic debitis porro mollitia blanditiis cum, deleniti
+                            est,
+                            doloremque, neque earum dignissimos voluptas? Maxime, facere quod?</p>
+                    </div>
+                    <hr>
+                    <ul class="contact-info__list list-style--none position-relative z-index-101">
+                        <h3 class="color--black mb-5 ">Entrez en contact</h3>
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-envelope fa-2x mb-3"></i></span>
+                            jeanmichelguilleman@anaf-didactif.fr
+                        </li>
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-phone fa-2x mb-1"></i></span> 03 21 75 27
+                            98
+                        </li>
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-map-marker-alt fa-2x mt-4"></i></span> Anaf
+                            Didactif.
+                            <br> 16 parc d'activité du Gard
+                            <br> 62300 Lens
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
+                    <form action="#" class="contact-form form-validate" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label for="raison">Raison social*</label>
+                                    <input type="text" class="form-control" id="raison" name="raison"
+                                        placeholder="Par exemple 'anaf'">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label class="required-field" for="siret">N° de Siret*</label>
+                                    <input type="text" class="form-control" id="siret" name="siret" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label for="contact">Contact</label>
+                                    <input type="text" class="form-control" id="contact" name="contact"
+                                        placeholder="Votre Nom">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label class="required-field" for="phone">N° de téléphone</label>
+                                    <input type="text" class="form-control" id="phone" name="phone"
+                                        placeholder="Exemple : 13004005000">
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-12 mb-3">
+                                <div class="form-group">
+                                    <label for="poste">Poste*</label>
+                                    <input type="text" class="form-control" id="poste" name="poste" placeholder="Poste">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 mb-3">
+                                <div class="form-group">
+                                    <label for="email">Adresse email*</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Exemple : jacque@martin.com">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="form-group">
+                                    <label class="required-field" for="message">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4"
+                                        placeholder="Votre message....."></textarea>
+                                </div>
+                                <div>* champ obligatoire</div>
+                            </div>
+                            <div class="col-sm-12 mb-3 mt-4">
+                                <button type="submit" name="submit" class="register btn ">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Contact Form Wrapper -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ======= Clients Section ======= -->
+    <div id="clients" class="clients section-bg mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../public/assets/img/Capture7.JPG" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../public/assets/img/Capture8.JPG" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../public/assets/img/defi.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../public/assets/img/loos.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../public/assets/img/defi.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../public/assets/img/passed.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Clients Section -->
+
+    <!-- ======= Footer ======= -->
+    <!--footer starts from here-->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Trouvez nous</h5>
+                    <!--headin5_amrc-->
+                    <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum
+                        has
+                        been
+                        the industry's standard dummy text ever since the 1500s</p>
+                    <p><i class="fa fa-location-arrow"></i> 16 rue du gard 62 300 lens </p>
+                    <p><i class="fa fa-phone"></i> 03 21 75 27 98 </p>
+                    <p><i class="fa fa fa-envelope"></i> jeanmichelguilleman@anaf-didactif.fr </p>
+                </div>
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Liens rapides</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="vue/eligibilite-aptic.html">Éligible à l'Aptic</a></li>
+                        <li><a href="vue/offre-d-emploi.html">Offres d'emploi</a></li>
+                        <li><a href="vue/nos_formations.html">Formations</a></li>
+                        <li><a href="vue/pro.html">Professionnel vos besoins</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Liens rapides</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="foire-aux-questions.html">Foire aux questions</a></li>
+                        <li><a href="register.html">S'enregistrer</a></li>
+                        <li><a href="#">Mon compte</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+                <div class=" col-sm-4 col-md  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Suivez-nous</h5>
+                    <!--headin5_amrc ends here-->
+                    <ul class="footer_ul2_amrc">
+                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                            <p>Lorem Ipsum is simply dummy text of the printing...<a
+                                    href="#">https://www.lipsum.com/</a>
+                            </p>
+                        </li>
+                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                            <p>Lorem Ipsum is simply dummy text of the printing...<a
+                                    href="#">https://www.lipsum.com/</a>
+                            </p>
+                        </li>
+                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                            <p>Lorem Ipsum is simply dummy text of the printing...<a
+                                    href="#">https://www.lipsum.com/</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="newsletter-subscribe">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-ms-6">
+                                    <div class="intro">
+                                        <h6 class=" text-white mt-2">Souscrire à la newsletter</h6>
+                                    </div>
+                                    <form class="form-inline" method="post">
+                                        <div class="form-group"><input class="form-control" type="email" name="email"
+                                                placeholder="Your Email">
+                                            <div class="form-group"><button class="btn btn-primary"
+                                                    type="submit">Souscrire
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </ul>
+                    <!--footer_ul2_amrc ends here-->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="vue/qui-sommes-nous.html">À propos</a></li>
+                <li><a href="vue/resultats.html">Résultats</a></li>
+                <li><a href="vue/contact.html">Contact</a></li>
+            </ul>
+            <!--foote_bottom_ul_amrc ends here-->
+            <p class="text-center">Copyright @2021 | Designed With by <a href="#">Anaf Dadactif</a></p>
+
+            <ul class="social_footer_ul">
+                <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!--social_footer_ul ends here-->
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../public/assets/js/bootstrap.min.js"></script>
+    <script src="../public/assets/js/main.js"></script>
+</body>
+
+</html>
