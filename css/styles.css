@@ -11512,6 +11512,9 @@ html {
 #titre_pro {
 width:300px}
 
-#barre_html{
-  background-color: yellow;
-}
+.remplissage{
+  width:300px;
+  padding:2px;
+  background-color:white;
+  border:1px solid black;
+  text-align:center}
