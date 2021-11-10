@@ -11514,10 +11514,9 @@ width:300px}
 
 .img-fluid {width:300px}
 
+#chapeau{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-.remplissage{
-  width:300px;
-  padding:2px;
-  background-color:white;
-  border:1px solid black;
-  text-align:center}
+}
