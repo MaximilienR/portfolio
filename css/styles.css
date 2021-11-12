@@ -11511,6 +11511,9 @@ html {
 /*mon css*/
 #titre_pro {
 width:300px}
+#lillustrator{width: 52%; }
+@media (max-width: 800px){#lillustrator{width: 70%;}}
+@media (min-width: 760px){#lillustrator{width: 60%;}}
 
 .img-fluid {width:300px}
  
