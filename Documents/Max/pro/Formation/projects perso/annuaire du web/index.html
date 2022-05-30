@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <link href="./style.css" rel="stylesheet">
+  <title>l'annuaire du web </title>
+
+</head>
+
+<body>
+
+  <div id="app">
+    <h1>L'annuaire du web</h1>
+    <fieldset>
+      <legend>Filtre sur le nom</legend>
+      <input type="text" v-model="filterName">
+    </fieldset>
+    <fieldset>
+
+      <legend>Option</legend>
+      <input type="checkbox" v-model="Men"><span>Homme</span></input>
+      <input type="checkbox" v-model="Women"><span>Femme</span></input>
+      <input type="checkbox" v-model="mobil"><span>Téléphone </span></input>
+      <span> Photo </span>
+     <!--taille de l'image-->
+      <select v-model="cut" name="picture">
+        <option> choisissez votre format</option>
+        <option value="1" name="smolle">Petit</option>
+        <option value="2" selected name="medium">Moyen</option>
+        <option value="3" name="big">Grand</option>
+      </select>
+      <input type="checkbox" checked v-model="shaping"><span>Mise en forme</span>
+
+    </fieldset>
+    
+    <div v-for="p in personnes":class="{formatting:shaping}">
+      <div v-if="(((Men && p.name.title=='Mr')||
+                 (Women && p.name.title=='Mrs'))
+                 &&(p.name.last.indexOf(filterName)>=0
+                 ||filterName==''))"> 
+      <img v-if="cut==1":src="p.picture.small"><br/>
+      <img v-if="cut==2":src="p.picture.medium"/><br/>
+      <img v-if="cut==3":src="p.picture.big"/><br/>
+      {{p.name.title}} {{p.name.fist}} {{p.name.last}}<br/>
+      {{p.email}}<br/>
+      {{p.dob.job}}<br/>
+
+      {{p.location.country}}<br/>
+      <span v-if="mobil">{{p.phone}}</span><br/>
+
+       
+
+    </div>
+
+  </div>
+
+   <script src="./main.js" type="text/javascript" ></script>
+    
+  </scrip>
+
+</body>
+
+</html>
