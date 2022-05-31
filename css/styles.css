@@ -11516,8 +11516,10 @@ width:300px}
 @media (min-width: 760px){#lillustrator{width: 60%;}}
 
 .img-fluid {width:300px}
- 
-  
+ #meetting{width: 255px;
+height: 250px;
+margin-left: 10%;
+ }
 #chapeau{
   display: block;
   margin-left: auto;
