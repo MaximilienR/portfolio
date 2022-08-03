@@ -2,3 +2,7 @@
 height: 5px;}
  .card{margin: auto;
 margin-top: 30%;}
+#searchImg{}
+body{background-image: url(/apppMeteo/img/paris.jpg);
+    background-repeat: no-repeat;
+ }
