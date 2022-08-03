@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Tableau en vue.js</h1>
+  <inscrits :liste="personnes"></inscrits>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Inscrits from './components/Inscrits.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    name:'App',
+    components: {
+        Inscrits
+    },data(){
+        return{
+            personnes:[
+                {prenom:"Jean",nom:"Dupont",age:25},
+                 {prenom:"Random",nom:"Smith",age:30},
+                 {prenom:"Malcom",nom:"Ranger",age:57},
+                 {prenom:"Christophe",nom:"Leblanc",age:44},
+                 
+            ]
+        }
+    }}
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+th{background-color: red;}
+table{
+    background-color: aqua;
+    margin-left:35%;
+    width: 500px;}
+h1{text-align: center;}
+body{background-color: silver;}
 </style>
