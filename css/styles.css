@@ -11525,4 +11525,63 @@ margin-left: 10%;
   margin-left: auto;
   margin-right: auto;
 
+}@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ 
+
+.langage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  animation: grow 5s linear infinite;
+}
+
+.langage img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.langage-react{
+ 
+}
+.img{
+  width: 50px;
+  height: 50px;
+  animation: pulse 5s linear infinite;
 }
