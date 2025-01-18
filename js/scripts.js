@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.5 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -20,7 +11,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -47,6 +37,22 @@ window.addEventListener('DOMContentLoaded', event => {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
+            }
+        });
+    });
+
+    // Add smooth scrolling to all links with hashes
+    const smoothScrollLinks = [].slice.call(document.querySelectorAll('a[href*="#"]'))
+        .filter(link => link.getAttribute('href').startsWith('#') && link.hostname === window.location.hostname && link.pathname === window.location.pathname);
+    smoothScrollLinks.map(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 72,
+                    behavior: 'smooth'
+                });
             }
         });
     });
