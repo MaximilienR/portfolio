@@ -11642,30 +11642,34 @@ margin-left: 10%;
 }
 
 .carrousel img {
+  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  max-width: 80vh; /* Définir la largeur maximale */
-  max-height: 60vh; 
-  object-fit: contain; /* Ajouter cette propriété */
-  animation: slide 10s infinite;
+  max-width: 80vh;
+  max-height: 60vh;
+  object-fit: contain;
+  animation: slide 30s infinite; /* Augmenter la durée de l'animation */
 }
+
 .carrousel img:nth-child(1) {
+  left: 0;
   animation-delay: 0s;
 }
 
 .carrousel img:nth-child(2) {
-  animation-delay: 2.5s;
+  left: 100%;
+  animation-delay: 7.5s; /* Augmenter le délai d'animation */
 }
 
 .carrousel img:nth-child(3) {
-  animation-delay: 5s;
+  left: 200%;
+  animation-delay: 15s; /* Augmenter le délai d'animation */
 }
 
 .carrousel img:nth-child(4) {
-  animation-delay: 7.5s;
+  left: 300%;
+  animation-delay: 22.5s; /* Augmenter le délai d'animation */
 }
 
 @keyframes slide {
