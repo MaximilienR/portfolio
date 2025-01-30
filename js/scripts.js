@@ -58,3 +58,16 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const carrousel = document.querySelector('.carrousel');
+const images = carrousel.querySelectorAll('img');
+const btnNext = carrousel.querySelector('.btn-next');
+let currentImage = 0;
+
+images[currentImage].classList.add('active');
+
+btnNext.addEventListener('click', () => {
+  images[currentImage].classList.remove('active');
+  currentImage = (currentImage + 1) % images.length;
+  images[currentImage].classList.add('active');
+});
