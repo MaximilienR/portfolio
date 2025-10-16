@@ -11677,3 +11677,128 @@ margin-left: 10%;
   background-color: #444;
 }
  
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+}
+
+.timeline li {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 20px;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+}
+
+.timeline li::after {
+    content: '';
+    position: absolute;
+    left: 39px;
+    top: 30px;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.timeline li:last-child::after {
+    display: none;
+}
+
+.year {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.role {
+    font-weight: 600;
+}
+
+.company {
+    color: #555;
+    font-style: italic;
+}
+ .skills-pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* Chaque niveau est centré et sa largeur diminue vers le sommet */
+.level {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.level.base {
+    width: 100%;
+}
+
+.level.mid {
+    width: 80%;
+}
+
+.level.mid-top {
+    width: 60%;
+}
+
+.level.top {
+    width: 40%;
+}
+
+/* Style des badges */
+.skill-badge {
+    border: 2px solid #3498db;
+    color: #3498db;
+    border-radius: 25px;
+    padding: 8px 14px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.skill-badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: #3498db;
+    color: white;
+}
+
+/* Responsive */
+ @media (max-width: 700px) {
+    .skills-pyramid {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .level {
+        flex-direction: column; /* Met chaque niveau en colonne */
+        justify-content: center;
+        align-items: center; /* Centre les badges */
+        width: 100% !important;
+        gap: 10px; /* Espace entre badges */
+    }
+
+    .skill-badge {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        width: 90%; /* Occupe presque toute la largeur */
+        max-width: 300px; /* Optionnel : limite la taille des badges */
+    }
+}
