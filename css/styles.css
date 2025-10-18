@@ -639,6 +639,7 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  
 }
 
 @media (min-width: 576px) {
@@ -11801,4 +11802,41 @@ margin-left: 10%;
         width: 90%; /* Occupe presque toute la largeur */
         max-width: 300px; /* Optionnel : limite la taille des badges */
     }
+}.bulles {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0; /* derrière ton contenu */
 }
+
+.bulles span {
+  position: absolute;
+  bottom: -50px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: bulle 8s linear infinite;
+  opacity: 0.8;
+}
+
+/* Animation de montée */
+@keyframes bulle {
+  0%   { transform: translateY(0) scale(1); opacity: 0; }
+  10%  { opacity: 1; }
+  100% { transform: translateY(-110vh) scale(1.3); opacity: 0; }
+}
+
+/* Variations de position, taille, durée, couleur */
+.bulles span:nth-child(1) { left: 10%; width: 8px;  height: 8px;  background: #ff8a8a;  animation-delay: 0s; }
+.bulles span:nth-child(2) { left: 25%; width: 12px; height: 12px; background: #ffd36b;  animation-delay: 1s; animation-duration: 9s; }
+.bulles span:nth-child(3) { left: 40%; width: 10px; height: 10px; background: #6bffb0;  animation-delay: 2s; animation-duration: 7s; }
+.bulles span:nth-child(4) { left: 55%; width: 15px; height: 15px; background: #8affff;  animation-delay: 0.5s; animation-duration: 10s; }
+.bulles span:nth-child(5) { left: 70%; width: 9px;  height: 9px;  background: #c68bff;  animation-delay: 3s; animation-duration: 8s; }
+.bulles span:nth-child(6) { left: 80%; width: 11px; height: 11px; background: #ffb6b6;  animation-delay: 1.5s; animation-duration: 9s; }
+.bulles span:nth-child(7) { left: 15%; width: 6px;  height: 6px;  background: #aaff7f;  animation-delay: 2.5s; animation-duration: 6s; }
+.bulles span:nth-child(8) { left: 50%; width: 14px; height: 14px; background: #7fc8ff;  animation-delay: 3.5s; animation-duration: 9s; }
+.bulles span:nth-child(9) { left: 65%; width: 10px; height: 10px; background: #ffc27f;  animation-delay: 1s; animation-duration: 7s; }
+.bulles span:nth-child(10){ left: 85%; width: 8px;  height: 8px;  background: #ff7fcf;  animation-delay: 4s; animation-duration: 8s; }
+
+ 
