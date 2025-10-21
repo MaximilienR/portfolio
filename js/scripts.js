@@ -71,3 +71,32 @@ btnNext.addEventListener('click', () => {
   currentImage = (currentImage + 1) % images.length;
   images[currentImage].classList.add('active');
 });
+
+document.querySelector("form").addEventListener("submit", async function(e) {
+  e.preventDefault(); // empêche la redirection
+
+  const form = e.target;
+
+  // Envoi via fetch (comme si c'était un submit classique)
+  const data = new FormData(form);
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: data,
+  });
+
+  if (response.ok) {
+    // Message de succès
+    form.innerHTML = `
+      <div class="alert alert-success text-center p-4 rounded-3">
+        ✅ Merci ! Votre message a bien été envoyé.
+      </div>
+    `;
+  } else {
+    // Message d’erreur
+    form.innerHTML = `
+      <div class="alert alert-danger text-center p-4 rounded-3">
+        ❌ Une erreur est survenue. Veuillez réessayer.
+      </div>
+    `;
+  }
+});

@@ -11839,4 +11839,24 @@ margin-left: 10%;
 .bulles span:nth-child(9) { left: 65%; width: 10px; height: 10px; background: #ffc27f;  animation-delay: 1s; animation-duration: 7s; }
 .bulles span:nth-child(10){ left: 85%; width: 8px;  height: 8px;  background: #ff7fcf;  animation-delay: 4s; animation-duration: 8s; }
 
- 
+ form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  form label {
+    color: #333;
+  }
+
+  form input, form textarea {
+    border-radius: 0.75rem;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+
+  form input:focus, form textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.25);
+  }
